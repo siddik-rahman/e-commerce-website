@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce-website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+      <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-50 text-gray-800 transition duration-500">
+
+<!-- Navbar -->
+<header class="fixed top-0 w-full bg-blue-500 text-white p-4 flex justify-between items-center shadow">
+  <h1 class="text-2xl font-bold">Modern Shop</h1>
+
+  <div class="flex items-center gap-3">
+    <input id="searchBox" type="text"
+      class="px-4 py-2 rounded-md focus:outline-none text-black"
+      placeholder="Search product">
+   
+    <!-- Cart -->
+    <div class="relative">
+      <button id="cartBtn" class="bg-white  text-black px-3 py-1 rounded-md relative">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount" class="bg-red-500 text-white rounded-full -top-2 
+        -right-2 px-2 py-0.5 text-xs absolute">0</span>
+      </button>
+      <div id="cartDropdown" class="absolute right-0 mt-2 w-64 bg-white text-black border 
+      rounded-lg shadow hidden p-4">
+        <h2 class="font-bold text-lg mb-2">Cart Items</h2>
+        <ul id="cartItems" class="list-disc pl-5 mb-2"></ul>
+        <hr class="mt-2 mb-2 border-gray-500" >
+        <p id="cartTotal" class="font-bold">Total: $0.00</p>
+      </div>
+    
+    </div>
+  </div>
+</header>
+
+<!-- Product Grid -->
+<main class="container mx-auto p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="productContainer">
+  <!-- Products will be dynamically added here -->
+</main>
+
+<!-- Footer -->
+<footer class="bg-blue-500 text-white text-center p-4 mt-6">
+  &copy; 2025 Modern Shop | All rights reserved.
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
