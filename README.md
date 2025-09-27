@@ -21,7 +21,7 @@ git clone https://github.com/siddik-rahman/E-Commerce-Website.git
 3. Start Shopping.  
 ---  
 ## Live Demo:  
-[Click Here to View Demo](https://siddik-rahman.github.io/E-Commerce-Website/)  
+[Click Here to View Demo](https://siddik-rahman.github.io/e-commerce-website/)  
 ---  
 ## Author: 
 **siddik-rahman**  
