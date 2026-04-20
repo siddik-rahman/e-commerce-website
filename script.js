@@ -37,8 +37,8 @@ function renderProducts(list){
      card.innerHTML = `
        <img src="${p.img}" alt="${p.name}" class="h-72 w-full object-cover rounded">
        <h2 class="text-lg font-semibold mt-2">${p.name}</h2>
-       <p class="text-gray-600 mb-2">$${p.price}</p>
-       <button class="addCart bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-lg">Add to Cart</button>
+       <p class="text-red-600 mb-2">$${p.price}</p>
+       <button class="addCart bg-green-500 hover:bg-green-300 text-white px-3 py-1 rounded-lg">Add to Cart</button>
      `;
      container.appendChild(card);
 
